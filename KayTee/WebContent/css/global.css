@@ -1,0 +1,121 @@
+body {
+	background: -webkit-linear-gradient(#A8DBFC 5%, #FFFFFF 100%); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#A8DBFC 5%, #FFFFFF 100%); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#A8DBFC 5%, #FFFFFF 100%); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#A8DBFC 5%, #FFFFFF 100%); /* Standard syntax */
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+address {
+	font-size: 1.5em;
+}
+
+#header {
+	background-color: #FFFFFF;
+	border-bottom: solid 1px #000000;
+}
+
+#header #mainLogo {
+	height: 250px;
+	width: 450px;
+	margin-left: 20px;
+}
+
+#console > div {
+	padding: 10px;
+}
+
+#footer {
+	font-size: 1.2em;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	border-top: solid 1px #000000;
+}
+
+#map-canvas {
+	width: 100%;
+	height: 580px;
+	margin: auto;
+}
+
+#slideshowIndicators {
+	background-color: #FFFFFF;
+}
+
+#slideshowIndicators  > li {
+	background-color: #000000;
+}
+
+#slideshowIndicators  > li.active {
+	background-color: #A8DBFC;
+}
+
+.container {
+	background-color: #FFFFFF;
+	-webkit-box-shadow: 8px 0px 25px -5px #555555, -8px 0px 25px -5px #555555;
+	   -moz-box-shadow: 8px 0px 25px -5px #555555, -8px 0px 25px -5px #555555;
+			box-shadow: 8px 0px 25px -5px #555555, -8px 0px 25px -5px #555555;
+}
+
+.container > .row {
+	border-left: solid 1px #000000;
+	border-right: solid 1px #000000;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.img-responsive.img-center {
+	margin: 0 auto;
+}
+
+.row-vertical-align {
+	position: relative;
+	transform: translateY(30%);
+}
+
+#contentPanel > div > p {
+	font-style: italic;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: center;
+}
+
+#contentPanel > div > p > ul {
+	font-style: italic;
+	font-weight: bold;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#contentPanel {
+	font-size: 1.6em;
+	border-top: solid 1px #000000;
+}
+
+#carousel {
+	padding-bottom: 20px;
+}
+
+#hours {
+	width: 90%;
+	margin: auto;
+	vertical-align: middle;
+}
+
+#hours td, #hours th {
+	padding: 5px;
+	text-align: center;
+}
+
+#header #socialMediaPanel {
+	top: 115px;
+	position: relative;
+}
+
+#header #socialMediaPanel  img {
+	margin-left: 5px;
+	margin-right: 5px;
+}

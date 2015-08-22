@@ -1,0 +1,16 @@
+#myCarousel {
+	background-color: #FFFFFF;
+}
+
+.carousel-indicators {
+	bottom: -30px;
+}
+
+.carousel-control > span {
+	color: #000000;
+}
+
+.carousel-control.right , .carousel-control.left{
+	background-color: #FFFFFF;
+	background-image: none;
+}
