@@ -11,6 +11,6 @@
 }
 
 .carousel-control.right , .carousel-control.left{
-	background-color: #FFFFFF;
+	background-color: transparent;
 	background-image: none;
 }
