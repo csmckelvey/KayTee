@@ -1,53 +1,14 @@
-body {
-	background: -webkit-linear-gradient(#A8DBFC 5%, #FFFFFF 100%); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(#A8DBFC 5%, #FFFFFF 100%); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(#A8DBFC 5%, #FFFFFF 100%); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#A8DBFC 5%, #FFFFFF 100%); /* Standard syntax */
+HTML, BODY {
+	height: 100%;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	background: -webkit-linear-gradient(#A8DBFC 5%, #FFFFFF 100%); /* SAFARI 5.1 to 6.0  */
+	background:    -moz-linear-gradient(#A8DBFC 5%, #FFFFFF 100%); /* FIREFOX 3.6 to 15  */
+	background:      -o-linear-gradient(#A8DBFC 5%, #FFFFFF 100%); /* OPERA 11.1 to 12.0 */
+	background:         linear-gradient(#A8DBFC 5%, #FFFFFF 100%); /* STANDARD SYNTAX    */
 }
 
-address {
+ADDRESS {
 	font-size: 1.5em;
-}
-
-#header {
-	background-color: #FFFFFF;
-	border-bottom: solid 1px #000000;
-}
-
-#header #mainLogo {
-	height: 250px;
-	width: 450px;
-	margin-left: 20px;
-}
-
-#console > div {
-	padding: 10px;
-}
-
-#footer {
-	font-size: 1.2em;
-	padding-top: 20px;
-	padding-bottom: 10px;
-	border-top: solid 1px #000000;
-}
-
-#map-canvas {
-	width: 100%;
-	height: 580px;
-	margin: auto;
-}
-
-#slideshowIndicators {
-	background-color: #FFFFFF;
-}
-
-#slideshowIndicators  > li {
-	background-color: #000000;
-}
-
-#slideshowIndicators  > li.active {
-	background-color: #A8DBFC;
 }
 
 .container {
@@ -61,8 +22,8 @@ address {
 	border-left: solid 1px #000000;
 	border-right: solid 1px #000000;
 	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .img-responsive.img-center {
@@ -74,18 +35,57 @@ address {
 	transform: translateY(30%);
 }
 
-#contentPanel > div > p {
-	font-style: italic;
-	font-weight: bold;
-	padding-top: 10px;
-	padding-left: 30px;
-	padding-right: 30px;
-	text-align: center;
+#header {
+	background-color: #FFFFFF;
+	border-bottom: solid 1px #000000;
 }
 
-#contentPanel > div > p > ul {
-	font-style: italic;
+#header #mainLogo {
+	width: 450px;
+	height: 250px;
+	margin-left: 20px;
+}
+
+#console > DIV {
+	padding: 10px;
+}
+
+#footer {
+	font-size: 1.2em;
+	padding-top: 20px;
+	border-top: solid 1px #000000;
+}
+
+#map-canvas {
+	width: 100%;
+	height: 580px;
+	margin: auto;
+}
+
+#slideshowIndicators {
+	background-color: #FFFFFF;
+}
+
+#slideshowIndicators  > LI {
+	background-color: #000000;
+}
+
+#slideshowIndicators  > LI.active {
+	background-color: #A8DBFC;
+}
+
+#contentPanel > DIV > P {
 	font-weight: bold;
+	padding-top: 10px;
+	text-align: center;
+	font-style: italic;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#contentPanel > DIV > P > UL {
+	font-weight: bold;
+	font-style: italic;
 	padding-left: 20px;
 	padding-right: 20px;
 }
@@ -105,7 +105,7 @@ address {
 	vertical-align: middle;
 }
 
-#hours td, #hours th {
+#hours TD, #hours TH {
 	padding: 5px;
 	text-align: center;
 }
@@ -115,7 +115,7 @@ address {
 	position: relative;
 }
 
-#header #socialMediaPanel  img {
+#header #socialMediaPanel  IMG {
 	margin-left: 5px;
 	margin-right: 5px;
 }
