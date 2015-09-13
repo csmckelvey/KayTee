@@ -1,10 +1,15 @@
 HTML, BODY {
 	height: 100%;
+	min-width: 360px; 
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	background: -webkit-linear-gradient(#A8DBFC 5%, #FFFFFF 100%); /* SAFARI 5.1 to 6.0  */
 	background:    -moz-linear-gradient(#A8DBFC 5%, #FFFFFF 100%); /* FIREFOX 3.6 to 15  */
 	background:      -o-linear-gradient(#A8DBFC 5%, #FFFFFF 100%); /* OPERA 11.1 to 12.0 */
 	background:         linear-gradient(#A8DBFC 5%, #FFFFFF 100%); /* STANDARD SYNTAX    */
+}
+
+BODY.adjustHeight {
+	height: initial;
 }
 
 ADDRESS {
@@ -26,13 +31,27 @@ ADDRESS {
             box-sizing: border-box;
 }
 
+.img-center {
+	margin: 0 auto;
+}
+
 .img-responsive.img-center {
 	margin: 0 auto;
 }
 
-.row-vertical-align {
+.col-vertical-align-18 {
+	position: relative;
+	transform: translateY(18%);
+}
+
+.col-vertical-align-30 {
 	position: relative;
 	transform: translateY(30%);
+}
+
+.col-vertical-align-55 {
+	position: relative;
+	transform: translateY(55%);
 }
 
 #header {
@@ -53,12 +72,13 @@ ADDRESS {
 #footer {
 	font-size: 1.2em;
 	padding-top: 20px;
+	padding-bottom: 20px;
 	border-top: solid 1px #000000;
 }
 
 #map-canvas {
 	width: 100%;
-	height: 580px;
+	height: 780px;
 	margin: auto;
 }
 
@@ -110,12 +130,29 @@ ADDRESS {
 	text-align: center;
 }
 
-#header #socialMediaPanel {
-	top: 115px;
-	position: relative;
+#menuButton {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	background-color: #A8DBFC;
 }
 
-#header #socialMediaPanel  IMG {
-	margin-left: 5px;
-	margin-right: 5px;
+#menuButton > TABLE {
+	width: 100%;
+}
+
+.socialMediaRow {
+	text-align: right;
+}
+
+.row-eq-height {
+  display: -webkit-flex;
+  display: 	-webkit-box;
+  display: 	-ms-flexbox;
+  display:         flex;
+}
+
+.socialMediaRow > A > SPAN {
+	padding-left: 20px;
+	padding-right: 20px;
 }

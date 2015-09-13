@@ -8,6 +8,7 @@
 		<SCRIPT src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></SCRIPT>
 		<SCRIPT src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></SCRIPT>
 		<LINK href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+		<LINK href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
 		
 		<SCRIPT src="js/global.js"></SCRIPT>
 		<LINK rel="stylesheet" type="text/css" href="css/carousel.css" />
@@ -15,25 +16,35 @@
 		<LINK rel="stylesheet" type="text/css" href="css/navbar.css" />
 	</HEAD>
 	
-	<BODY id="body">
+	<BODY id="body" class="adjustHeight">
 		<DIV class="container">
 			<DIV id="header" class="row">
 				<DIV class="col-sm-4">
 					<A href="index.html"><IMG class="img-responsive img-center" src="images/logos/logo_extra_small.png" alt="Logo Image" /></A>
 				</DIV>
 				<DIV class="col-sm-8">
-					<NAV class="navbar">
-						<DIV class="container-fluid">
-							<DIV>
-								<UL class="nav navbar-nav navbar-right">
-									<LI><A class="navlink" href="index.html">Home</A></LI>
-									<LI><A class="navlink" href="contact.html">Contact</A></LI>
-									<LI class="active"><A class="navlink active" href="gallery.html">Gallery</A></LI> 
-									<LI><A class="navlink" href="about.html">About</A></LI> 
-								</UL>
-							</DIV>
+					<DIV class="row">
+						<DIV class="col-sm-12">
+							<NAV class="navbar">
+								<DIV class="container-fluid">
+									<DIV>
+										<UL class="nav navbar-nav navbar-right">
+											<LI><A class="navlink" href="index.html">Home</A></LI>
+											<LI class="active"><A class="navlink active" href="gallery.html">Gallery</A></LI> 
+											<LI><A class="navlink" href="contact.html">Contact</A></LI>
+											<LI><A class="navlink" href="about.html">About</A></LI> 
+										</UL>
+									</DIV>
+								</DIV>
+							</NAV>
 						</DIV>
-					</NAV>
+					</DIV>
+					<DIV class="row">
+						<DIV class="col-sm-12 col-vertical-align-55 socialMediaRow">
+							 <a href="https://twitter.com/kayteebabybout1"><span class="fa fa-twitter fa-3x"></span></a>
+							 <a href="https://www.facebook.com/kayteebabyboutique"><span class="fa fa-facebook fa-3x"></span></a>
+						</DIV>
+					</DIV>
 				</DIV>
 			</DIV>
 			<DIV id="banner" class="row text-center">
@@ -41,27 +52,35 @@
 					<A href="index.html"><IMG src="images/coming_soon_logo.jpg" alt="Logo Image"  height="100px;" /></A>
 				</DIV>
 			</DIV>
-			<DIV class="row">
+			<DIV id="carousel" class="row">
 				<DIV class="col-sm-12">
 					<DIV id="myCarousel" class="carousel slide" data-ride="carousel">
-						<OL class="carousel-indicators">
+						<OL id="slideshowIndicators" class="carousel-indicators">
 							<LI data-target="#myCarousel" data-slide-to="0" class="active"></LI>
 							<LI data-target="#myCarousel" data-slide-to="1"></LI>
 							<LI data-target="#myCarousel" data-slide-to="2"></LI>
 							<LI data-target="#myCarousel" data-slide-to="3"></LI>
+							<LI data-target="#myCarousel" data-slide-to="4"></LI>
+							<LI data-target="#myCarousel" data-slide-to="5"></LI>
 						</OL>
 						<DIV class="carousel-inner" role="listbox">
 							<DIV class="item active">
-								<IMG src="images/slideshow/store.jpg" alt="" class="img-responsive img-center">
+								<IMG src="images/slideshow/image1.jpg" alt="" class="img-responsive img-center">
 							</DIV>
 							<DIV class="item">
-								<IMG src="images/slideshow/crib.jpg" alt="" class="img-responsive img-center">
+								<IMG src="images/slideshow/image2.jpg" alt="" class="img-responsive img-center">
 							</DIV>
 							<DIV class="item">
-								<IMG src="images/slideshow/bouncy_chairs.jpg" alt="" class="img-responsive img-center">
+								<IMG src="images/slideshow/image3.jpg" alt="" class="img-responsive img-center">
 							</DIV>
 							<DIV class="item">
-								<IMG src="images/slideshow/bottles.jpg" alt="" class="img-responsive img-center">
+								<IMG src="images/slideshow/image4.jpg" alt="" class="img-responsive img-center">
+							</DIV>
+							<DIV class="item">
+								<IMG src="images/slideshow/image5.jpg" alt="" class="img-responsive img-center">
+							</DIV>
+							<DIV class="item">
+								<IMG src="images/slideshow/image6.jpg" alt="" class="img-responsive img-center">
 							</DIV>
 						</DIV>
 						<A class="left carousel-control" href="#myCarousel" role="button" data-slide="next">
@@ -75,11 +94,17 @@
 					</DIV>
 				</DIV>
 			</DIV>
-			<DIV id="footer" class="row text-center">
-				<DIV class="col-sm-12">
-					&copy; 2015
+			<DIV id="footer" class="row row-eq-height text-center">
+				<DIV class="col-sm-2">
+					<IMG class="img" alt="HTML 5 Valid Webpage" src="images/logos/html5.png">
+				</DIV>
+				<DIV class="col-sm-8 col-vertical-align-30" style="overflow: hidden;">
+					<SPAN id="footerText" class="some">&copy; 2015</SPAN>
+				</DIV>
+				<DIV class="col-sm-2">
+					<IMG class="img" alt="CSS 3 Valid Webpage" src="images/logos/css3.png">
 				</DIV>
 			</DIV>
 		</DIV>
 	</BODY>
-<HTML>
+</HTML>

@@ -5,10 +5,11 @@
 		
 		<META charset="iso-8859-1">
 		
+		<SCRIPT src="https://maps.googleapis.com/maps/api/js"></SCRIPT>
 		<SCRIPT src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></SCRIPT>
 		<SCRIPT src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></SCRIPT>
-		<SCRIPT src="https://maps.googleapis.com/maps/api/js"></SCRIPT>
 		<LINK href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+		<LINK href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
 		
 		<SCRIPT src="js/map.js"></SCRIPT>
 		<SCRIPT src="js/global.js"></SCRIPT>
@@ -16,25 +17,35 @@
 		<LINK rel="stylesheet" type="text/css" href="css/navbar.css" />
 	</HEAD>
 	
-	<BODY id="body" style="height: initial;">
+	<BODY id="body" class="adjustHeight">
 		<DIV class="container">
 			<DIV id="header" class="row">
 				<DIV class="col-sm-4">
 					<A href="index.html"><IMG class="img-responsive img-center" src="images/logos/logo_extra_small.png" alt="Logo Image" /></A>
 				</DIV>
 				<DIV class="col-sm-8">
-					<NAV class="navbar">
-						<DIV class="container-fluid">
-							<DIV>
-								<UL class="nav navbar-nav navbar-right">
-									<LI><A class="navlink" href="index.html">Home</A></LI>
-									<LI class="active"><A class="navlink active" href="contact.html">Contact</A></LI>
-									<LI><A class="navlink" href="gallery.html">Gallery</A></LI> 
-									<LI><A class="navlink" href="about.html">About</A></LI> 
-								</UL>
-							</DIV>
+					<DIV class="row">
+						<DIV class="col-sm-12">
+							<NAV class="navbar">
+								<DIV class="container-fluid">
+									<DIV>
+										<UL class="nav navbar-nav navbar-right">
+											<LI><A class="navlink" href="index.html">Home</A></LI>
+											<LI><A class="navlink" href="gallery.html">Gallery</A></LI> 
+											<LI class="active"><A class="navlink active" href="contact.html">Contact</A></LI>
+											<LI><A class="navlink" href="about.html">About</A></LI> 
+										</UL>
+									</DIV>
+								</DIV>
+							</NAV>
 						</DIV>
-					</NAV>
+					</DIV>
+					<DIV class="row">
+						<DIV class="col-sm-12 col-vertical-align-55 socialMediaRow">
+							 <a href="https://twitter.com/kayteebabybout1"><span class="fa fa-twitter fa-3x"></span></a>
+							 <a href="https://www.facebook.com/kayteebabyboutique"><span class="fa fa-facebook fa-3x"></span></a>
+						</DIV>
+					</DIV>
 				</DIV>
 			</DIV>
 			<DIV id="banner" class="row text-center">
@@ -55,7 +66,6 @@
 								<A href="mailto:kayteebabyboutique@gmail.com">kayteebabyboutique@gmail.com</A><BR /><BR />
 								<A href="https://www.google.com/maps/dir//21885+CA-18,+Apple+Valley,+CA+92307/@34.5001855,-117.1860301,19z/data=!4m13!1m4!3m3!1s0x80c361cfef29aa49:0xa75c12fe6c99d625!2s21885+CA-18,+Apple+Valley,+CA+92307!3b1!4m7!1m0!1m5!1m1!1s0x80c361cfef29aa49:0xa75c12fe6c99d625!2m2!1d-117.1860301!2d34.5001855!6m1!1e1">Get Directions</A>
 							</ADDRESS>
-						</P>
 					</DIV>
 				</DIV>
 			</DIV>
@@ -64,9 +74,15 @@
 					<DIV id="map-canvas"></DIV>
 				</DIV>
 			</DIV>
-			<DIV id="footer" class="row text-center">
-				<DIV class="col-sm-12">
-					&copy; 2015 | All Rights Reserved
+			<DIV id="footer" class="row row-eq-height text-center">
+				<DIV class="col-sm-2">
+					<IMG class="img" alt="HTML 5 Valid Webpage" src="images/logos/html5.png">
+				</DIV>
+				<DIV class="col-sm-8 col-vertical-align-30" style="overflow: hidden;">
+					<SPAN id="footerText" class="some">&copy; 2015</SPAN>
+				</DIV>
+				<DIV class="col-sm-2">
+					<IMG class="img" alt="CSS 3 Valid Webpage" src="images/logos/css3.png">
 				</DIV>
 			</DIV>
 		</DIV>
