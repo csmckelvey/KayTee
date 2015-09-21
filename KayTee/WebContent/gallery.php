@@ -1,21 +1,9 @@
 <!DOCTYPE HTML>
 <HTML lang="en-US">
-	<HEAD>
-		<TITLE>Kay-Tee Boutique</TITLE>
-		
-		<META charset="UTF-8">
-		
-		<SCRIPT src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></SCRIPT>
-		<SCRIPT src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></SCRIPT>
-		<LINK href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
-		<LINK href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
-		
-		<SCRIPT src="js/global.js"></SCRIPT>
-		<LINK rel="stylesheet" type="text/css" href="css/carousel.css" />
-		<LINK rel="stylesheet" type="text/css" href="css/global.css" />
-		<LINK rel="stylesheet" type="text/css" href="css/navbar.css" />
-	</HEAD>
-	
+	<?php 
+		include 'commonElements.php';
+		printHeadTag("Photo Gallery of Kay-Tee Baby Boutique", "Kay-Tee Baby Boutique Photo Gallery", "", "carousel.css");
+	?>
 	<BODY id="body" class="adjustHeight">
 		<DIV class="container">
 			<DIV id="header" class="row">
@@ -85,27 +73,18 @@
 								    }
 								}
 							?>
-						<A class="left carousel-control" href="#myCarousel" role="button" data-slide="next">
-							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-						</A>
-						<A class="right carousel-control" href="#myCarousel" role="button" data-slide="prev">
-							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-						</A>
+							<A class="left carousel-control" href="#myCarousel" role="button" data-slide="next">
+								<SPAN class="glyphicon glyphicon-chevron-left" aria-hidden="true"></SPAN>
+								<SPAN class="sr-only">Previous</SPAN>
+							</A>
+							<A class="right carousel-control" href="#myCarousel" role="button" data-slide="prev">
+								<SPAN class="glyphicon glyphicon-chevron-right" aria-hidden="true"></SPAN>
+								<SPAN class="sr-only">Next</SPAN>
+							</A>
+						</DIV>
 					</DIV>
 				</DIV>
-			</DIV>
-			<DIV id="footer" class="row row-eq-height text-center">
-				<DIV class="col-sm-2">
-					<IMG class="img" alt="HTML 5 Valid Webpage" src="images/logos/html5.png">
-				</DIV>
-				<DIV class="col-sm-8 col-vertical-align-30" style="overflow: hidden;">
-					<SPAN id="footerText" class="some">&copy; 2015</SPAN>
-				</DIV>
-				<DIV class="col-sm-2">
-					<IMG class="img" alt="CSS 3 Valid Webpage" src="images/logos/css3.png">
-				</DIV>
+				<?php printFooter(true); ?>
 			</DIV>
 		</DIV>
 	</BODY>

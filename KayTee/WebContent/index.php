@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
 <HTML lang="en-US">
-
-	<?php #printHeader("Homepage of Kay-Tee Baby Boutique", "Kay-Tee Baby Boutique Homepage", "js1.js,js2.js", "css1.css,css2.css"); ?>
-	<?php echo("Hello"); ?>
-	
+	<?php 
+		include 'commonElements.php';
+		printHeadTag("Homepage of Kay-Tee Baby Boutique", "Kay-Tee Baby Boutique Homepage", "", "");
+	?>
 	<BODY id="body" class="adjustHeight" >
 		<DIV class="container">
 			<DIV id="header" class="row">
@@ -101,17 +101,7 @@
 					</TABLE>
 				</DIV>
 			</DIV>
-			<DIV id="footer" class="row row-eq-height text-center">
-				<DIV class="col-sm-2">
-					<IMG class="img" alt="HTML 5 Valid Webpage" src="images/logos/html5.png">
-				</DIV>
-				<DIV class="col-sm-8 col-vertical-align-30" style="overflow: hidden;">
-					<SPAN id="footerText" class="some">&copy; 2015</SPAN>
-				</DIV>
-				<DIV class="col-sm-2">
-					<IMG class="img" alt="CSS 3 Valid Webpage" src="images/logos/css3.png">
-				</DIV>
-			</DIV>
+			<?php printFooter(true); ?>
 		</DIV>
 	</BODY>
 </HTML>
