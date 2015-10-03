@@ -2,44 +2,11 @@
 <HTML lang="en-US">
 	<?php 
 		include 'commonElements.php';
-		printHeadTag("Photo Gallery of Kay-Tee Baby Boutique", "Kay-Tee Baby Boutique Photo Gallery", "", "carousel.css");
+		printHeadTag("Photo Gallery of Kay-Tee Baby Boutique", "Kay-Tee Baby Boutique Photo Gallery", null, "carousel.css");
 	?>
-	<BODY id="body" class="adjustHeight">
+	<BODY id="body">
 		<DIV class="container">
-			<DIV id="header" class="row">
-				<DIV class="col-sm-4">
-					<A href="index.html"><IMG class="img-responsive img-center" src="images/logos/logo_extra_small.png" alt="Logo Image" /></A>
-				</DIV>
-				<DIV class="col-sm-8">
-					<DIV class="row">
-						<DIV class="col-sm-12">
-							<NAV class="navbar">
-								<DIV class="container-fluid">
-									<DIV>
-										<UL class="nav navbar-nav navbar-right">
-											<LI><A class="navlink" href="index.html">Home</A></LI>
-											<LI class="active"><A class="navlink active" href="gallery.html">Gallery</A></LI> 
-											<LI><A class="navlink" href="contact.html">Contact</A></LI>
-											<LI><A class="navlink" href="about.html">About</A></LI> 
-										</UL>
-									</DIV>
-								</DIV>
-							</NAV>
-						</DIV>
-					</DIV>
-					<DIV class="row">
-						<DIV class="col-sm-12 col-vertical-align-55 socialMediaRow">
-							 <a href="https://twitter.com/kayteebabybout1"><span class="fa fa-twitter fa-3x"></span></a>
-							 <a href="https://www.facebook.com/kayteebabyboutique"><span class="fa fa-facebook fa-3x"></span></a>
-						</DIV>
-					</DIV>
-				</DIV>
-			</DIV>
-			<DIV id="banner" class="row text-center">
-				<DIV class="col-sm-12">
-					<A href="index.html"><IMG src="images/coming_soon_logo.jpg" alt="Logo Image"  height="100" /></A>
-				</DIV>
-			</DIV>
+			<?php printHeader("Gallery"); ?>
 			<DIV id="carousel" class="row">
 				<DIV class="col-sm-12">
 					<DIV id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -51,9 +18,9 @@
 								
 								foreach ($dir as $fileinfo) {
 								    if (!$fileinfo->isDot()) {
-								    	echo("Counter is : " . $counter);
 								    	if (($counter + 1) == 1) { echo("<LI data-target='#myCarousel' data-slide-to='0' class='active'></LI>\n"); }
-								    	else { $counter = $counter + 1; echo("<LI data-target='#myCarousel' data-slide-to='" . $counter . "'></LI>\n"); }
+								    	else { echo("\t\t\t\t\t\t\t<LI data-target='#myCarousel' data-slide-to='" . $counter . "'></LI>\n"); }
+								    	$counter = $counter + 1;
 								    }
 								}
 							?>
@@ -67,9 +34,10 @@
 								foreach ($dir as $fileinfo) {
 								    if (!$fileinfo->isDot()) {
 								    	if (($counter + 1) == 1) { echo("<DIV class='item active'>\n"); }
-								    	else { echo("<DIV class='item'>\n"); }
-								    	echo("<IMG src='" . $imagePath . $fileinfo->getFilename() . "' alt='Slide Show Image " . $counter . "' class='img-responsive img-center'>\n");
-								    	echo("</DIV>\n");
+								    	else { echo("\t\t\t\t\t\t\t<DIV class='item'>\n"); }
+								    	echo("\t\t\t\t\t\t\t\t<IMG src='" . $imagePath . $fileinfo->getFilename() . "' alt='Slide Show Image " . $counter . "' class='img-responsive img-center'>\n");
+								    	echo("\t\t\t\t\t\t\t</DIV>\n");
+								    	$counter = $counter + 1;
 								    }
 								}
 							?>
@@ -84,8 +52,8 @@
 						</DIV>
 					</DIV>
 				</DIV>
-				<?php printFooter(true); ?>
 			</DIV>
+			<?php printFooter(true); ?>
 		</DIV>
 	</BODY>
 </HTML>

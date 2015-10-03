@@ -1,7 +1,9 @@
 $(document).ready(function() {
+	var zoomLevel = 16;
 	var contentString = "";
 	var coords = {lat: 34.5001855, lng: -117.1860301};
 	var mapCanvas = document.getElementById('map-canvas');
+	var tooltip = "Kay-Tee Boutique | Click For Contact Info";
 	
 	contentString += "<DIV>                                                                                               ";
 	contentString += "	<IMG class='img-responsive img-center' src='images/logos/logo_extra_small.png' alt='Logo Image' />";
@@ -13,13 +15,13 @@ $(document).ready(function() {
 	contentString += "			Fax (760) 810 - 0678<BR />                                                                ";
 	contentString += "			Store (760) 810 - 0488<BR />                                                              ";
 	contentString += "			<A href='mailto:kayteebabyboutique@gmail.com'>kayteebabyboutique@gmail.com</A><BR /><BR />";
-	contentString += "		</ADDRESS>                                                                                    ";
+	contentString += "      </ADDRESS>                                                                                    ";
 	contentString += "	</P>                                                                                              ";
 	contentString += "</DIV>                                                                                              ";
 
 	var mapOptions = {
 		center: coords,
-		zoom: 16,
+		zoom: zoomLevel,
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	};
 	
@@ -32,7 +34,7 @@ $(document).ready(function() {
 	var marker = new google.maps.Marker({
 	    position: coords,
 	    map: map,
-	    title: 'Kay-Tee Boutique | Click For Contact Info'
+	    title: tooltip
 	});
 	
 	marker.addListener('click', function() {

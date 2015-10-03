@@ -106,7 +106,9 @@ ADDRESS {
 
 #contentPanel {
 	font-size: 1.6em;
-	border-top: solid 1px #000000;
+    padding-top: 40px;
+    padding-bottom: 40px;
+		border-top: solid 1px #000000;
 }
 
 #hours {
@@ -131,6 +133,11 @@ ADDRESS {
 	width: 100%;
 }
 
+#bannerImage {
+	width: 100%;
+	margin-top: 10px;
+}
+
 .socialMediaRow {
 	text-align: right;
 }
@@ -147,8 +154,19 @@ ADDRESS {
 	padding-right: 20px;
 }
 
+#content {
+	padding-top: 30px;
+}
+
 #content P {
 	width: 70%;
 	margin: auto;
-	font-size: 1.3em;
+	font-size: 1.5em;
+	font-weight: bold;
+	font-style: italic;
+}
+
+#homeBanner {
+	padding-top: 30px;
+	padding-bottom: 30px;
 }

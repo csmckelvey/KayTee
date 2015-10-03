@@ -2,67 +2,15 @@
 <HTML lang="en-US">
 	<?php 
 		include 'commonElements.php';
-		printHeadTag("Homepage of Kay-Tee Baby Boutique", "Kay-Tee Baby Boutique Homepage", "", "");
+		printHeadTag("Homepage of Kay-Tee Baby Boutique", "Kay-Tee Baby Boutique Homepage", null, null);
 	?>
 	<BODY id="body" class="adjustHeight" >
 		<DIV class="container">
-			<DIV id="header" class="row">
-				<DIV class="col-sm-4">
-					<A href="index.html"><IMG class="img-responsive img-center" src="images/logos/logo_extra_small.png" alt="Logo Image" /></A>
-				</DIV>
-				<DIV class="col-sm-8">
-					<DIV class="row">
-						<DIV class="col-sm-12">
-							<NAV class="navbar">
-								<DIV class="container-fluid">
-									<DIV class="navbar-header">
-										<BUTTON id="menuButton" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-											<TABLE>
-												<TR>
-													<TD id="collapsedMenuBars">
-														<DIV>
-															<SPAN class="icon-bar"></SPAN> 
-															<SPAN class="icon-bar"></SPAN>
-															<SPAN class="icon-bar"></SPAN>
-															<SPAN class="icon-bar"></SPAN>
-														</DIV>
-													</TD>
-													<TD id="collapsedMenuText">
-														<SPAN>Menu</SPAN>
-													</TD>
-												</TR>
-											</TABLE>
-										</BUTTON>
-									</DIV>
-									<DIV class="collapse navbar-collapse" id="myNavbar">
-										<UL class="nav navbar-nav navbar-right">
-											<LI class="active"><A class="navlink active" href="index.html">Home</A></LI>
-											<LI><A class="navlink" href="gallery.html">Gallery</A></LI> 
-											<LI><A class="navlink" href="contact.html">Contact</A></LI>
-											<LI><A class="navlink" href="about.html">About</A></LI> 
-										</UL>
-									</DIV>
-								</DIV>
-							</NAV>
-						</DIV>
-					</DIV>
-					<DIV class="row">
-						<DIV class="col-sm-12 col-vertical-align-55 socialMediaRow">
-							 <A href="https://twitter.com/kayteebabybout1"><SPAN class="fa fa-twitter fa-3x"></SPAN></A>
-							 <A href="https://www.facebook.com/kayteebabyboutique"><SPAN class="fa fa-facebook fa-3x"></SPAN></A>
-						</DIV>
-					</DIV>
-				</DIV>
-			</DIV>
-			<DIV id="banner" class="row text-center">
-				<DIV class="col-sm-12">
-					<A href="index.html"><IMG src="images/coming_soon_logo.jpg" alt="Logo Image" height="100" /></A>
-				</DIV>
-			</DIV>
+			<?php printHeader("Home"); ?>
 			<DIV CLASS="row text-center">
 				<DIV class="col-sm-12">
 					<DIV class="text-center">
-						<IMG class="img img-center" src="images/grand_opening.jpg" alt="Grand Opening Flyer" height="700" width="600" />
+						<IMG id="homeBanner" class="img img-center" src="images/home_banner.jpg" alt="Now Open Flyer" height="1100" width="800" />
 					</DIV>
 				</DIV>
 			</DIV>

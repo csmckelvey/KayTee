@@ -2,44 +2,11 @@
 <HTML lang="en-US">
 	<?php 
 		include 'commonElements.php';
-		printHeadTag("Contact Page of Kay-Tee Baby Boutique", "Kay-Tee Baby Boutique Contact Page", "js/map.js,https://maps.googleapis.com/maps/api/js", "");
+		printHeadTag("Contact Page of Kay-Tee Baby Boutique", "Kay-Tee Baby Boutique Contact Page", "js/map.js,https://maps.googleapis.com/maps/api/js", null);
 	?>
 	<BODY id="body" class="adjustHeight">
 		<DIV class="container">
-			<DIV id="header" class="row">
-				<DIV class="col-sm-4">
-					<A href="index.html"><IMG class="img-responsive img-center" src="images/logos/logo_extra_small.png" alt="Logo Image" /></A>
-				</DIV>
-				<DIV class="col-sm-8">
-					<DIV class="row">
-						<DIV class="col-sm-12">
-							<NAV class="navbar">
-								<DIV class="container-fluid">
-									<DIV>
-										<UL class="nav navbar-nav navbar-right">
-											<LI><A class="navlink" href="index.html">Home</A></LI>
-											<LI><A class="navlink" href="gallery.html">Gallery</A></LI> 
-											<LI class="active"><A class="navlink active" href="contact.html">Contact</A></LI>
-											<LI><A class="navlink" href="about.html">About</A></LI> 
-										</UL>
-									</DIV>
-								</DIV>
-							</NAV>
-						</DIV>
-					</DIV>
-					<DIV class="row">
-						<DIV class="col-sm-12 col-vertical-align-55 socialMediaRow">
-							 <a href="https://twitter.com/kayteebabybout1"><span class="fa fa-twitter fa-3x"></span></a>
-							 <a href="https://www.facebook.com/kayteebabyboutique"><span class="fa fa-facebook fa-3x"></span></a>
-						</DIV>
-					</DIV>
-				</DIV>
-			</DIV>
-			<DIV id="banner" class="row text-center">
-				<DIV class="col-sm-12">
-					<A href="index.html"><IMG src="images/coming_soon_logo.jpg" alt="Logo Image"  height="100" /></A>
-				</DIV>
-			</DIV>
+			<?php printHeader("Contact"); ?>
 			<DIV CLASS="row text-center">
 				<DIV class="col-sm-12">
 					<DIV class="text-center" style="margin-left: 20px;">
