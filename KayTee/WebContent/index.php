@@ -32,19 +32,19 @@
 						</TR>
 						<TR>
 							<TD>Monday - Tuesday</TD>
-							<TD>10am - 6pm</TD>
+							<TD>10am - 5pm</TD>
 						</TR>
 						<TR>
-							<TD>Wednesday</TD>
+							<TD>Wednesday - Thursday</TD>
 							<TD>Closed</TD>
 						</TR>
 						<TR>
-							<TD>Thursday - Friday</TD>
-							<TD>10am - 6pm</TD>
+							<TD>Friday</TD>
+							<TD>10am - 5pm</TD>
 						</TR>
 						<TR>
 							<TD>Saturday - Sunday</TD>
-							<TD>9am - 2pm</TD>
+							<TD>10am - 2pm</TD>
 						</TR>
 					</TABLE>
 				</DIV>
