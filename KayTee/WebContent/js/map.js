@@ -14,7 +14,7 @@ $(document).ready(function() {
 	contentString += "			Apple Valley, CA 92307<BR />";
 	contentString += "			Fax (760) 810 - 0678<BR />";
 	contentString += "			Store (760) 810 - 0488<BR />";
-	contentString += "			<A href='mailto:kayteebabyboutique@gmail.com'>kayteebabyboutique@gmail.com</A>");
+	contentString += "			<A href='mailto:kayteebabyboutique@gmail.com'>kayteebabyboutique@gmail.com</A>";
 	contentString += "                      <BR /><BR />";
 	contentString += "      </ADDRESS>";
 	contentString += "	</P>";
